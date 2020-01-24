@@ -1,0 +1,286 @@
+*{
+
+	padding: 0px;
+	margin: 0px;
+	box-sizing: :border-box;
+	font-family: "Sans-Serif";
+}
+
+
+/*header{
+
+	width: 100%;
+	height: 60px;
+	background: #98c6eb;
+	
+}*/
+
+.container-header{
+	width: 100%;
+	max-width: 1200px;
+	position: relative;
+	margin: auto;
+}
+
+.logo-title{
+	display: flex;
+}
+
+.logo-title img{
+	
+	width: 120px;
+	height: auto;
+	margin-top: 10px;
+	margin-left: 10px;
+	
+}
+
+.logo-title h4{
+
+	color:white;
+	font-weight: 100;
+	margin-left: 10px;
+	margin-top: 20px;
+	
+}
+
+.icono-menu{
+	position: absolute;
+	right: 10px;
+	top: 14px;
+	color:white;
+	font-size: 28px;
+}
+
+/*portada*/
+
+
+.container-portada{
+	width: 100%;
+	height: 700px;
+	background-image: url(../img/fondo.jpg);
+	background-size: 150%;
+	animation: movimiento 120s infinite linear alternate;
+	background-repeat: no-repeat;
+}
+
+@keyframes movimiento{
+
+	from{
+		background-position: bottom left;	
+	}
+	to{
+		background-position: top right;
+	}
+	
+}
+
+.capa-gradient{
+
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: linear-gradient(left,black,#0672d0);
+	opacity: 0.5;
+	
+}
+
+
+.container-details > p{
+	width:700px;
+	position: relative;
+	margin-left: 600px;
+	margin-top: 159px;
+	font-family: cursive;
+	font-size: 30pt;
+}
+.details > img{
+	width: :130px;
+	position: relative;
+	top: 100px;
+	left: 600px;
+}
+
+@media (max-width:1000px){
+	
+		.container-portada{
+	width: 800px;
+	height: 700px;
+	background-image: url(../img/fondo.jpg);
+	background-size: 1200px;
+	animation: movimiento 50s infinite linear alternate;
+	background-repeat: no-repeat;
+}
+
+@keyframes movimiento{
+
+	from{
+		background-position: bottom left;	
+	}
+	to{
+		background-position: top right;
+	}
+	
+}
+	
+	.container-details > p{
+		width:500px;
+		position: relative;
+		margin-left: 170px;
+		margin-top: 159px;
+		font-size: 25pt;
+	}
+	
+	.details > img{
+	width: :40px;
+	position: relative;
+	top: 100px;
+	left: 150px;
+	}
+	
+}
+
+@media (max-width:850px){
+	
+		.container-portada{
+	width: 800px;
+	height: 700px;
+	background-image: url(../img/fondo.jpg);
+	background-size: 1200px;
+	animation: movimiento 50s infinite linear alternate;
+	background-repeat: no-repeat;
+}
+
+@keyframes movimiento{
+
+	from{
+		background-position: bottom left;	
+	}
+	to{
+		background-position: top right;
+	}
+	
+}
+	
+	.container-details > p{
+		width:400px;
+		position: relative;
+		margin-left: 170px;
+		margin-top: 159px;
+		font-size: 25pt;
+	}
+	
+	.details > img{
+	width: :40px;
+	position: relative;
+	top: 100psx;
+	left: 100px;
+	}
+	
+}
+
+@media (max-width:600px){
+	
+.container-portada{
+	width: 700px;
+	height: 700px;
+	background-image: url(../img/fondo.jpg);
+	background-size: 1200px;
+	animation: movimiento 50s infinite linear alternate;
+	background-repeat: no-repeat;
+}
+
+@keyframes movimiento{
+
+	from{
+		background-position: bottom left;	
+	}
+	to{
+		background-position: top right;
+	}
+	
+}
+	
+	.container-details > p{
+		width:500px;
+		position: relative;
+		margin-left: 70px;
+		margin-top: 159px;
+		font-size: 25pt;
+	}
+	
+	.details > img{
+	width: :40px;
+	position: relative;
+	top: 100px;
+	left: 50px;
+	}
+	
+}
+
+
+@media (max-width:500px){
+	
+	.container-portada{
+	width: 700px;
+	height: 700px;
+	background-image: url(../img/fondo.jpg);
+	background-size: 1200px;
+	animation: movimiento 50s infinite linear alternate;
+	background-repeat: no-repeat;
+}
+
+@keyframes movimiento{
+
+	from{
+		background-position: bottom left;	
+	}
+	to{
+		background-position: top right;
+	}
+	
+}
+
+	
+	.container-details > p{
+		width:300px;
+		position: relative;
+		margin-left: 100px;
+		margin-top: 170px;
+		font-size: 15pt;
+	
+	}
+	.details > img{
+	width: :30px;
+	position: relative;
+	top: 150px;
+	left: 10px;
+	}
+	
+}
+
+
+
+ul{list-style:none;margin:0px;padding:0px;clear:both;}
+    ul li{margin:0px 10px;padding:0px;float:left;}
+    ul li a{display:block;text-decoration:none}
+ ul.menu li a{
+        position: relative;
+        color:#ED1C24;
+        font-weight:bold;
+    }
+    ul.menu li a:before{
+        position: absolute;
+        color:#005496;
+        content:attr(title);
+        left:0px;
+        top:0px;
+        max-width:0%;
+        white-space: nowrap;
+        overflow:hidden;
+        transition: opacity 0.3s ease 0s, transform 0.3s ease 0s;
+        transform: translateY(20px);   
+    }
+    ul.menu li a:hover:before{
+        max-width:100%;
+    }
